@@ -1,0 +1,21 @@
+import 'dart:math';
+
+void main() {
+  // Coeficientes a, b e c
+  double a = 1;
+  double b = -3;
+  double c = 2;
+
+  // Calculando o delta
+  double delta = (b * b) - (4 * a * c);
+
+  if (delta < 0) {
+    print('A equação não possui raízes reais.');
+  } else {
+    // Calculando as raízes
+    double x1 = (-b + sqrt(delta)) / (2 * a);
+    double x2 = (-b - sqrt(delta)) / (2 * a);
+
+    print('As raízes são: x1 = $x1 e x2 = $x2');
+  }
+}
