@@ -1,0 +1,32 @@
+void main() {
+  // Criando um conjunto de números inteiros
+  Set<int> numeros = {1, 2, 3, 4, 5};
+
+  // Adicionando um novo valor ao conjunto
+  numeros.add(6);
+
+  // Removendo um valor do conjunto
+  numeros.remove(3);
+
+  // Verificando se um valor está no conjunto
+  bool contemQuatro = numeros.contains(4);
+
+  // Exibindo o conjunto e o resultado da verificação
+  print("Conjunto: $numeros");
+  print("Conjunto contém o número 4? $contemQuatro");
+
+  // Criando outro conjunto
+  Set<int> outrosNumeros = {4, 5, 6, 7, 8};
+
+  // União de dois conjuntos
+  Set<int> uniao = numeros.union(outrosNumeros);
+  print("União dos conjuntos: $uniao");
+
+  // Interseção de dois conjuntos
+  Set<int> intersecao = numeros.intersection(outrosNumeros);
+  print("Interseção dos conjuntos: $intersecao");
+
+  // Diferença entre dois conjuntos
+  Set<int> diferenca = numeros.difference(outrosNumeros);
+  print("Diferença entre os conjuntos: $diferenca");
+}
