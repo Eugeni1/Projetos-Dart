@@ -1,0 +1,29 @@
+void main() {
+  // Números inteiros
+  int inteiro = 42;
+
+  // Números de ponto flutuante (decimais)
+  double decimal = 3.14;
+
+  // Texto
+  String texto = "Olá, Dart!";
+
+  // Booleano (verdadeiro ou falso)
+  bool verdadeiroFalso = true;
+
+  // Listas (array)
+  List<int> lista = [1, 2, 3];
+
+  // Conjuntos (sem valores repetidos)
+  Set<String> conjunto = {'maçã', 'banana', 'laranja'};
+
+  // Mapas (chave-valor)
+  Map<String, int> mapa = {'idade': 18, 'altura': 175};
+
+  // Variável dinâmica (pode mudar de tipo)
+  dynamic variavelDinamica = "Eu sou um texto";
+  variavelDinamica = 123; // Agora é um número
+
+  // Nulo (sem valor)
+  Null semValor = null;
+}
