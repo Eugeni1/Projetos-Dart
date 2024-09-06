@@ -1,0 +1,22 @@
+void main() {
+  // Criando um dicionário (mapa)
+  Map<String, int> estoque = {
+    'Maçã': 50,
+    'Banana': 30,
+    'Laranja': 20
+  };
+
+  // Acessando valores no dicionário
+  print('Quantidade de maçãs: ${estoque['Maçã']}');
+
+  // Adicionando um novo item ao dicionário
+  estoque['Morango'] = 40;
+
+  // Removendo um item
+  estoque.remove('Laranja');
+
+  // Iterando sobre o dicionário
+  estoque.forEach((fruta, quantidade) {
+    print('Fruta: $fruta, Quantidade: $quantidade');
+  });
+}
