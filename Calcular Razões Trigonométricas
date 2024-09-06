@@ -1,0 +1,14 @@
+import 'dart:math';
+
+void main() {
+  double anguloGraus = 45; // Substitua pelo valor desejado
+  double anguloRadianos = anguloGraus * (pi / 180); // Converte graus para radianos
+
+  double seno = sin(anguloRadianos);
+  double cosseno = cos(anguloRadianos);
+  double tangente = tan(anguloRadianos);
+
+  print('Seno de $anguloGraus°: $seno');
+  print('Cosseno de $anguloGraus°: $cosseno');
+  print('Tangente de $anguloGraus°: $tangente');
+}
