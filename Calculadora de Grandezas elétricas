@@ -1,0 +1,72 @@
+import 'dart:io';
+
+void main() {
+  print('Escolha o cálculo desejado:');
+  print('1. Tensão (V)');
+  print('2. Corrente (I)');
+  print('3. Resistência (R)');
+  print('4. Potência (P)');
+  
+  int escolha = int.parse(stdin.readLineSync()!);
+  
+  switch (escolha) {
+    case 1:
+      calcularTensao();
+      break;
+    case 2:
+      calcularCorrente();
+      break;
+    case 3:
+      calcularResistencia();
+      break;
+    case 4:
+      calcularPotencia();
+      break;
+    default:
+      print('Opção inválida.');
+  }
+}
+
+void calcularTensao() {
+  print('Digite a corrente (I) em amperes:');
+  double corrente = double.parse(stdin.readLineSync()!);
+  
+  print('Digite a resistência (R) em ohms:');
+  double resistencia = double.parse(stdin.readLineSync()!);
+  
+  double tensao = corrente * resistencia;
+  print('A tensão (V) é: $tensao volts');
+}
+
+void calcularCorrente() {
+  print('Digite a tensão (V) em volts:');
+  double tensao = double.parse(stdin.readLineSync()!);
+  
+  print('Digite a resistência (R) em ohms:');
+  double resistencia = double.parse(stdin.readLineSync()!);
+  
+  double corrente = tensao / resistencia;
+  print('A corrente (I) é: $corrente amperes');
+}
+
+void calcularResistencia() {
+  print('Digite a tensão (V) em volts:');
+  double tensao = double.parse(stdin.readLineSync()!);
+  
+  print('Digite a corrente (I) em amperes:');
+  double corrente = double.parse(stdin.readLineSync()!);
+  
+  double resistencia = tensao / corrente;
+  print('A resistência (R) é: $resistencia ohms');
+}
+
+void calcularPotencia() {
+  print('Digite a tensão (V) em volts:');
+  double tensao = double.parse(stdin.readLineSync()!);
+  
+  print('Digite a corrente (I) em amperes:');
+  double corrente = double.parse(stdin.readLineSync()!);
+  
+  double potencia = tensao * corrente;
+  print('A potência (P) é: $potencia watts');
+}
