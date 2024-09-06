@@ -1,0 +1,16 @@
+import 'dart:io';
+
+void main() {
+  print('Digite a largura do retângulo:');
+  double largura = double.parse(stdin.readLineSync()!);
+
+  print('Digite a altura do retângulo:');
+  double altura = double.parse(stdin.readLineSync()!);
+
+  double area = calcularArea(largura, altura);
+  print('A área do retângulo é: $area');
+}
+
+double calcularArea(double largura, double altura) {
+  return largura * altura;
+}
