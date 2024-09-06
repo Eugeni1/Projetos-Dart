@@ -1,0 +1,25 @@
+import 'dart:io';
+
+void main() {
+  // Lista para armazenar as notas
+  List<double> notas = [];
+
+  // Coleta as 4 notas
+  for (int i = 1; i <= 4; i++) {
+    stdout.write('Digite a nota $i: ');
+    double nota = double.parse(stdin.readLineSync()!);
+    notas.add(nota);
+  }
+
+  // Calcula a média anual
+  double media = notas.reduce((a, b) => a + b) / notas.length;
+
+  print('Média anual: ${media.toStringAsFixed(2)}');
+
+  // Verifica se o aluno passou ou não
+  if (media >= 6.68) {
+    print('Aluno aprovado!');
+  } else {
+    print('Aluno reprovado.');
+  }
+}
