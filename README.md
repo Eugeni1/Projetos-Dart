@@ -1,43 +1,12 @@
-import 'dart:io';
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=4169E1&height=150&section=header" />
 
-void main() {
-  print('Calculadora Básica');
-  print('Escolha uma operação:');
-  print('1. Adição');
-  print('2. Subtração');
-  print('3. Multiplicação');
-  print('4. Divisão');
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=1E90FF&size=40&center=true&vCenter=true&width=1000&lines=Welcome+To+My+Repository+Of+Projects;In+Dart.)](https://git.io/typing-svg)
 
-  // Leitura da operação escolhida
-  String? choice = stdin.readLineSync();
-  
-  // Leitura dos números
-  print('Digite o primeiro número:');
-  double num1 = double.parse(stdin.readLineSync()!);
+#### Aqui você vai se deparar com alguns projetos básicos e intermédiarios na linguagem Dart.
 
-  print('Digite o segundo número:');
-  double num2 = double.parse(stdin.readLineSync()!);
+#### Este repositório está em constante mudança devido ao aprendizado contínuo na linguagem.
 
-  // Realiza a operação escolhida
-  switch (choice) {
-    case '1':
-      print('Resultado: ${num1 + num2}');
-      break;
-    case '2':
-      print('Resultado: ${num1 - num2}');
-      break;
-    case '3':
-      print('Resultado: ${num1 * num2}');
-      break;
-    case '4':
-      if (num2 != 0) {
-        print('Resultado: ${num1 / num2}');
-      } else {
-        print('Erro: Divisão por zero');
-      }
-      break;
-    default:
-      print('Opção inválida');
-      break;
-  }
-}
+#### Periodicamente o repositório é atualizado com novos códigos semanalmente.
+
+
+<img width=150% src="https://capsule-render.vercel.app/api?type=waving&color=4169E1&heigth=150&section=footer"/>
