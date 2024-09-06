@@ -1,0 +1,18 @@
+void main() {
+  // Cria uma lista de números
+  List<int> numeros = [10, 20, 30, 40, 50];
+
+  // Adiciona um novo número à lista
+  numeros.add(60);
+
+  // Remove o primeiro número da lista
+  numeros.removeAt(0);
+
+  // Exibe o tamanho da lista
+  print('Tamanho da lista: ${numeros.length}');
+
+  // Percorre e imprime os números da lista
+  for (int numero in numeros) {
+    print(numero);
+  }
+}
